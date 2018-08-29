@@ -45,7 +45,7 @@ t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution*
   </p>
 
 ### Practice
-1. Train with momentum(0.9)
+1. Train with momentum: 0.9
 2. Learing rate: 15
 3. Iteration: 500
 
