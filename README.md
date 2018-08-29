@@ -73,4 +73,6 @@ t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution*
       </tr>
     </table>
 
+## Reference
 
+[Visualizing Data using t-SNE](https://www.semanticscholar.org/paper/Visualizing-Data-using-t-SNE-Maaten-Hinton/10eb7bfa7687f498268bdf74b2f60020a151bdc6)
