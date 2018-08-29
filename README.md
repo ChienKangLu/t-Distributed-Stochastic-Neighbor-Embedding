@@ -24,7 +24,7 @@ t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensional reduction a
   
 ## t-SNE
 t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution** to compute similarity of low dimensional data.
-1. **symmetrized cost function**
+1. **Symmetrized cost function**
   <p align="center">
     <img src="https://latex.codecogs.com/svg.latex?p_%7Bij%7D%3D%5Cfrac%7Bp_%7Bj%7Ci%7D&plus;p_%7Bi%7Cj%7D%7D%7B2n%7D" />
   </p>
