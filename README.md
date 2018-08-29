@@ -48,4 +48,6 @@ t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution*
 1. Train with momentum: 0.9
 2. Learing rate: 15
 3. Iteration: 500
+4. Data: MNIST
+
 
