@@ -2,12 +2,12 @@
 t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensional reduction algorithm which comes from Stochastic Neighbor Embedding (SNE). It can capture local and global structure from high dimensional data into low dimensional data
 
 ## SNE
-1. Convert pairwise distances of high dimensional data into conditional probabilities(similaritiy) and assume each datapoint will pick neighbor acrroding to a Gaussain distribution,
+1. Convert pairwise distances of high dimensional data into conditional probabilities(similaritiy) and assume each datapoint will pick neighbor according to a Gaussain distribution,
   <p align="center">
     <img src="https://latex.codecogs.com/svg.latex?p_%7Bj%5Clvert%20i%7D%3D%5Cfrac%7Bexp%28-%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7Bx%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%20-%5Ctextbf%7B%5Ctextit%7Bx%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%5C%7C%5E2/2%5Csigma%20_i%5E2%29%7D%7B%5Csum%5Cnolimits_%7Bk%5Cneq%20i%7Dexp%28-%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7Bx%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%20-%20%5Ctextbf%7B%5Ctextit%7Bx%7D%7D_%5Ctextbf%7B%5Ctextit%7Bk%7D%7D%20%5Cright%20%5C%7C%5E2/2%5Csigma%20_i%5E2%29%7D" />
   </p>             
   
-2. Each datapoint has its own particular variance <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Csigma_i" /> which can reflect how dense or sparse different region is. A variance <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Csigma_i" /> can induce a probability distribution <img src="https://latex.codecogs.com/svg.latex?P_i" />. For Selecting proper variance for each <i>i</i>, user can set a fixed perplexity and it will use binary search to find <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Csigma_i" /> which can let <img src="https://latex.codecogs.com/svg.latex?P_i" /> to be a distribution with the fixed perplexity,
+2. Each datapoint of high dimensional data has its own particular variance <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Csigma_i" /> which can reflect how dense or sparse different region is. A variance <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Csigma_i" /> can induce a probability distribution <img src="https://latex.codecogs.com/svg.latex?P_i" />. For Selecting proper variance for each <i>i</i>, user can set a fixed perplexity and it will use binary search to find <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Csigma_i" /> which can let <img src="https://latex.codecogs.com/svg.latex?P_i" /> to be a distribution with the fixed perplexity,
   <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?%5Cbegin%7Barray%7D%7Blr%7D%20Perp%28P_i%29%3D2%5E%7BH%28P_i%29%7D%5C%5C%20H%28P_i%29%3D-%5Csum%5Cnolimits_j%20p_%7Bj%7Ci%7Dlog_2p_%7Bj%7Ci%7D%20%5Cend%7Barray%7D" />
   </p>
