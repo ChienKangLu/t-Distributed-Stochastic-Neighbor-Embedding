@@ -49,5 +49,28 @@ t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution*
 2. Learing rate: 15
 3. Iteration: 500
 4. Data: MNIST
+5. Result
+    <table>
+      <tr align="center">
+        <td><img src="https://github.com/ChienKangLu/t-Distributed-Stochastic-Neighbor-Embedding/blob/master/t_SNE/File_mnist_01289_200/pic/momentum_iter0.png" /></td>
+        <td><img src="https://github.com/ChienKangLu/t-Distributed-Stochastic-Neighbor-Embedding/blob/master/t_SNE/File_mnist_01289_200/pic/momentum_iter100.png" /></td>
+        <td><img src="https://github.com/ChienKangLu/t-Distributed-Stochastic-Neighbor-Embedding/blob/master/t_SNE/File_mnist_01289_200/pic/momentum_iter200.png" /></td>
+      </tr>
+      <tr align="center">
+        <td>iter 0</td>
+        <td>iter 100</td>
+        <td>iter 200</td>
+      </tr>
+      <tr align="center">
+        <td><img src="https://github.com/ChienKangLu/t-Distributed-Stochastic-Neighbor-Embedding/blob/master/t_SNE/File_mnist_01289_200/pic/momentum_iter300.png" /></td>
+        <td><img src="https://github.com/ChienKangLu/t-Distributed-Stochastic-Neighbor-Embedding/blob/master/t_SNE/File_mnist_01289_200/pic/momentum_iter400.png" /></td>
+        <td><img src="https://github.com/ChienKangLu/t-Distributed-Stochastic-Neighbor-Embedding/blob/master/t_SNE/File_mnist_01289_200/pic/momentum_iter499.png" /></td>
+      </tr>
+      <tr align="center">
+        <td>iter 300</td>
+        <td>iter 400</td>
+        <td>iter 499</td>
+      </tr>
+    </table>
 
 
