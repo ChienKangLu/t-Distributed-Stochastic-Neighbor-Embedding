@@ -24,5 +24,23 @@ T Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensional reduction a
   
 ## t-SNE
 t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution** to compute similarity of low dimensional data.
+1. **symmetrized cost function**
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?p_%7Bij%7D%3D%5Cfrac%7Bp_%7Bj%7Ci%7D&plus;p_%7Bi%7Cj%7D%7D%7B2n%7D" />
+  </p>
+  
+2. **Student-t distribution**
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?q_%7Bij%7D%3D%5Cfrac%7B%281&plus;%5Cleft%20%5C%7C%20y_i-y_j%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D%7D%7B%5Csum%5Cnolimits_%7Bk%5Cneq%20l%7D%281&plus;%5Cleft%20%5C%7C%20y_k-y_l%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D%7D" />
+  </p>
+  
+3. KL-divergence
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?C%3D%5Csum%5Cnolimits_iKL%28P%7C%7CQ%29%3D%5Csum%5Cnolimits_i%5Csum%5Cnolimits_jp_%7Bij%7Dlog%5Cfrac%7Bp_%7Bij%7D%7D%7Bq_%7Bij%7D%7D" />
+  </p>
 
+4. Gradient
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cdelta%20C%7D%7B%5Cdelta%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%7D%3D4%5Csum%5Cnolimits_j%28p_i_j-q_i_j%29%28%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D-%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%29%281&plus;%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D-%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D" />
+  </p>
 
