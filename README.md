@@ -1,5 +1,5 @@
 # t-Distributed-Stochastic-Neighbor-Embedding
-T Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensional reduction algorithm which comes from Stochastic Neighbor Embedding (SNE). It can capture local and global structure from high dimensional data into low dimensional data
+t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensional reduction algorithm which comes from Stochastic Neighbor Embedding (SNE). It can capture local and global structure from high dimensional data into low dimensional data
 
 ## SNE
 1. Convert pairwise distances of high dimensional data into conditional probabilities(similaritiy) and assume each datapoint will pick neighbor acrroding to a Gaussain distribution,
