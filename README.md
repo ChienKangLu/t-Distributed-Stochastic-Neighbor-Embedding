@@ -31,7 +31,7 @@ t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution*
   
 2. **Student-t distribution**
   <p align="center">
-    <img src="https://latex.codecogs.com/svg.latex?q_%7Bij%7D%3D%5Cfrac%7B%281&plus;%5Cleft%20%5C%7C%20y_i-y_j%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D%7D%7B%5Csum%5Cnolimits_%7Bk%5Cneq%20l%7D%281&plus;%5Cleft%20%5C%7C%20y_k-y_l%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D%7D" />
+    <img src="https://latex.codecogs.com/svg.latex?q_%7Bij%7D%3D%5Cfrac%7B%281&plus;%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%20-%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D%7D%7B%5Csum%5Cnolimits_%7Bk%5Cneq%20l%7D%281&plus;%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bk%7D%7D-%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bl%7D%7D%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D%7D" />
   </p>
   
 3. KL-divergence
