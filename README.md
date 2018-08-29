@@ -14,7 +14,7 @@ T Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensional reduction a
   
 3. Covert low dimensional data into conditional probabilities(similaritiy) with the same way but set the variance to <img src="https://latex.codecogs.com/svg.latex?%5Cinline%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D" />,
   <p align="center">
-    <img src="https://latex.codecogs.com/svg.latex?q_%7Bj%5Clvert%20i%7D%3D%5Cfrac%7Bexp%28-%5Cleft%20%5C%7C%20y_i%20-%20y_j%20%5Cright%20%5C%7C%5E2%29%7D%7B%5Csum%5Cnolimits_%7Bk%5Cneq%20i%7Dexp%28-%5Cleft%20%5C%7C%20y_i%20-%20y_k%20%5Cright%20%5C%7C%5E2%29%7D" />
+    <img src="https://latex.codecogs.com/svg.latex?q_%7Bj%5Clvert%20i%7D%3D%5Cfrac%7Bexp%28-%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%20-%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%5C%7C%5E2%29%7D%7B%5Csum%5Cnolimits_%7Bk%5Cneq%20i%7Dexp%28-%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%20-%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bk%7D%7D%20%5Cright%20%5C%7C%5E2%29%7D" />
   </p>
   
 4. Use gradient discnet to minimize Kullback-Leibler divergence(KL-divergence) of these two distribution,
