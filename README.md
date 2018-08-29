@@ -44,3 +44,8 @@ t-SNE use **symmetrized cost function** of SNE and use **Student-t distribution*
     <img src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cdelta%20C%7D%7B%5Cdelta%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D%7D%3D4%5Csum%5Cnolimits_j%28p_i_j-q_i_j%29%28%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D-%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%29%281&plus;%5Cleft%20%5C%7C%20%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bi%7D%7D-%5Ctextbf%7B%5Ctextit%7By%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%5C%7C%5E2%29%5E%7B-1%7D" />
   </p>
 
+### Practice
+1. Train with momentum(0.9)
+2. Learing rate: 15
+3. Iteration: 500
+
